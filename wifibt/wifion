@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Turn on the wifi power
+echo 1 > /sys/class/rkwifi/power
+sleep 2
+# Load wifi driver
+echo 1 > /sys/class/rkwifi/driver

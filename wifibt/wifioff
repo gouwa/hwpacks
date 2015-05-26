@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Unload the wifi driver
+echo 0 > /sys/class/rkwifi/driver
+sleep 2
+# Turn off the wifi power
+echo 0 > /sys/class/rkwifi/power
